@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="words_array">
+        <item>AXOLOTL</item>
+        <item>ZEBRA</item>
+        <item>KANGAROO</item>
+    </string-array>
+
+    <string-array name="hint_array">
+        <item>Cute sa Minecraft</item>
+        <item>Black and White</item>
+        <item>Ge Talon</item>
+    </string-array>
+
+
+
+</resources>
