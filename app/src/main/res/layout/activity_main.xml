@@ -10,6 +10,24 @@
 
     <!-- TextView for displaying blanks -->
     <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:capitalize="words"
+        android:fontFamily="sans-serif-black"
+        android:text="GUESS THE CLASSMATE"
+        android:textAlignment="center"
+        android:textSize="34sp" />
+
+    <TextView
+        android:id="@+id/textViewAttempts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="Attempts Left: 5"
+        android:textColor="@android:color/black" />
+
+    <TextView
         android:id="@+id/textViewHint"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -78,12 +96,11 @@
     </LinearLayout>
 
     <!-- Text Counter for remaining attempts -->
-    <TextView
-        android:id="@+id/textViewAttempts"
-        android:layout_width="wrap_content"
+
+    <Button
+        android:id="@+id/btnreset"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="16dp"
-        android:text="Attempts Left: 5"
-        android:textColor="@android:color/black"/>
+        android:text="Reset" />
 
 </LinearLayout>

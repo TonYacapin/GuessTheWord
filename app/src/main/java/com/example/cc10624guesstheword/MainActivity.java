@@ -27,6 +27,8 @@ public class MainActivity extends AppCompatActivity {
     private TextView attemptsTextView;
     private String hint;
 
+    private Button resetbutton;
+
     private int attemptsLeft = 5;
 
 
@@ -45,11 +47,21 @@ public class MainActivity extends AppCompatActivity {
         submitLetterButton = findViewById(R.id.buttonSubmitLetter);
         submitFinalButton = findViewById(R.id.buttonSubmitFinal);
         attemptsTextView = findViewById(R.id.textViewAttempts);
+        resetbutton = findViewById(R.id.btnreset);
+
 
         submitLetterButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 checkLetterGuess();
+            }
+        });
+
+
+        resetbutton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                resetGame();
             }
         });
 
@@ -85,6 +97,15 @@ public class MainActivity extends AppCompatActivity {
     private void checkLetterGuess() {
         String guess = letterInputEditText.getText().toString().toUpperCase();
 
+        // Check if guess is blank
+        if (guess.trim().isEmpty()) {
+            // Show an error message, toast is one way to do it
+            Toast.makeText(this, "Please enter a letter", Toast.LENGTH_SHORT).show();
+            return;
+        }
+
+        // Clear the input field after getting the guess
+        letterInputEditText.setText("");
 
         // Check if the guessed letter is in the selected word
         boolean letterFound = false;
@@ -109,10 +130,12 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
+
     private void checkFinalGuess() {
         String guess = finalAnswerEditText.getText().toString().toUpperCase();
         if (guess.equals(selectedWord)) {
             Toast.makeText(this, "You guessed correctly!", Toast.LENGTH_SHORT).show();
+            resetGame();
             // Handle correct guess
         } else {
             Toast.makeText(this, "Sorry! Your answer is not correct.", Toast.LENGTH_SHORT).show();
@@ -126,7 +149,7 @@ public class MainActivity extends AppCompatActivity {
 
         // Check if attempts are exhausted
         if (attemptsLeft <= 0) {
-            // Handle no attempts left
+            submitLetterButton.setEnabled(false);
             return;
         }
 
@@ -138,10 +161,19 @@ public class MainActivity extends AppCompatActivity {
 
         // Enable or disable buttons based on attempts left
         if (attemptsLeft <= 1) {
-            submitLetterButton.setEnabled(false);
+            return;
         }
 
         // Update other UI elements as needed
+    }
+
+    private void resetGame() {
+        attemptsLeft = 5;
+        letterInputEditText.setText("");
+        finalAnswerEditText.setText("");
+        selectNewWord();
+        updateUI();
+        submitLetterButton.setEnabled(true);
     }
 }
 

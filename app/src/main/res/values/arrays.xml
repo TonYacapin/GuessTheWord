@@ -1,17 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="words_array">
-        <item>AXOLOTL</item>
-        <item>ZEBRA</item>
-        <item>KANGAROO</item>
+        <item>KEVIN</item>
+        <item>HENDRE</item>
+        <item>MELBRAEI</item>
+        <item>HAMELTON</item>
+        <item>MARC</item>
+        <item>LIEZEL</item>
+        <item>RAIZEL</item>
+        <item>NOEMI</item>
+        <item>RAYNE</item>
+        <item>EMJAY</item>
+        <item>AUBREIGH</item>
+        <item>CAMILLE</item>
+        <item>CRISTIN</item>
+        <item>DICKSON</item>
+        <item>DONNA</item>
+        <item>IAN</item>
+        <item>MC</item>
+        <item>HANAMITCHIE</item>
+        <item>JERICHO</item>
+        <item>KEN</item>
+        <item>KRYSTER</item>
+        <item>NHIZZA</item>
+        <item>RC</item>
+        <item>RYAN</item>
+        <item>SEAN</item>
+        <item>SEBASTIAN</item>
     </string-array>
 
     <string-array name="hint_array">
-        <item>Cute sa Minecraft</item>
-        <item>Black and White</item>
-        <item>Ge Talon</item>
+        <item>Ka dorm ni kuya Ian</item>
+        <item>Pinsan ni Hamelton</item>
+        <item>Chess Champion</item>
+        <item>Pinsan ni Hendre</item>
+        <item>Chosen One taga bayombong</item>
+        <item>Hi bespren</item>
+        <item>Sounds like Liezel</item>
+        <item>Naka Glasses</item>
+        <item>Artist</item>
+        <item>Trio nila, Kert, Nhizza </item>
+        <item>The Marian</item>
+        <item>Ms. SEAIT</item>
+        <item>Singer nung Outing</item>
+        <item>Di nag uuniform</item>
+        <item>Nag beBAKE</item>
+        <item>Unique Salongga</item>
+        <item>Gods mag timpla</item>
+        <item>Ka group ni MC,DICKSON,CRISTIN sa thesis</item>
+        <item>Campus Personality</item>
+        <item>Leader sa thesis group nila</item>
+        <item>Mahilig sa Chocolate</item>
+        <item>Taga yogad</item>
+        <item>Chosen One taga bagabag</item>
+        <item>Reporting for Duty Sir!</item>
+        <item>Fluttttterrrrr</item>
+        <item>Gerardo cafe</item>
+
     </string-array>
-
-
-
 </resources>
